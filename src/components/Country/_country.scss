@@ -1,0 +1,41 @@
+.countries {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+.country {
+	border: 2px black;
+	border-style: dashed;
+	width: 20vw;
+	height: 13vw;
+	//width: fit-content;
+	padding: 1vw;
+	margin: 1vw;
+	text-align: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	color: aliceblue;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	& * {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 3px;
+		-webkit-text-stroke: 1px black;
+	}
+
+	& h3 {
+		text-align: center;
+		font-size: 2vw;
+	}
+	& p {
+		font-weight: 900;
+	}
+	& h4 {
+		font-weight: 900;
+		display: inline-block;
+	}
+}
