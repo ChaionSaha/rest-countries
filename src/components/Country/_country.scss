@@ -1,15 +1,16 @@
 .countries {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: stretch;
 }
 .country {
 	border: 2px black;
-	border-style: dashed;
+	border-style: solid;
 	width: 20vw;
+	min-width: 15vw;
 	height: 13vw;
-	//width: fit-content;
+
 	padding: 1vw;
 	margin: 1vw;
 	text-align: left;
@@ -20,6 +21,13 @@
 	overflow: auto;
 	display: flex;
 	flex-direction: column;
+
+	transition: all 250ms;
+
+	&:hover {
+		box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3);
+	}
+
 	& * {
 		margin: 0;
 		padding: 0;
@@ -31,9 +39,11 @@
 		text-align: center;
 		font-size: 2vw;
 	}
+
 	& p {
 		font-weight: 900;
 	}
+
 	& h4 {
 		font-weight: 900;
 		display: inline-block;
